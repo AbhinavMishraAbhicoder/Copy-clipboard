@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
+    <title>Copy clipboard</title>
+</head>
+<body>
+    <div class="text-boxes">
+        <div class="text-box HTMLBox" readonly>
+            <div class="topic">NOTES:</div>
+            <textarea id="HTMLBox" readonly>Plants are one of the most essential living organisms on earth. They are immensely beneficial to both animals and human beings. They produce oxygen which is crucial for the survival of living organisms. Trees provide shelter to animals and are also known for their medicinal benefits. Overall, different parts of plants have different roles to perform. They act as a source of food and oxygen and maintain the ecological balance.
+
+                A plant has many parts. Different parts perform different functionalities. The part of the plant that appears above the ground level is called the shoot system while the part of the plant which lies underneath the soil is called the root system.
+                
+                Also Refer: Getting to Know Plants
+                
+                For better understanding, we need to know in detail about the different parts of plants and their functions. Let’s have a glance at the structure of different plant parts and how they are beneficial to the environment.Class 7 Science Revision Notes we present here have been prepared by the best and most popular tutors of askIITians. Almost all these tutors are IITians. Those from Biology background have also studied at the best colleges and universities in India. All these tutors have impeccable academic track records and years of online teaching experience and the Science revision notes they have prepared for Class 7 students include all the details about the Science chapters they cover.
+
+                Science concepts in the revision notes for class VII students have been explained in very simple language. Information has been presented in the form of diagrams, images, tables and graphs wherever possible to make it easier for the students to remember it. Though these notes are based on the NCERT syllabus, they touch upon several additional details that children of this age can easily grasp. Based on their experience, our teachers also touch upon topics that make it easier for students to prepare for school-level exams as well as Science Olympiads.
+                
+                If you dream of becoming an engineer or doctor one day, these Science revision notes for Class 7 are a keeper. Some of these topics have already been covered in Class 6 Science Revision Notes. Here, the teachers have built upon the basics you learned earlier and add more depth and breadth to the knowledge you already have.
+            </textarea>
+            <button id="HTMLButton"><i class="fa fa-clone" aria-hidden="true"></i><br>Copy</button>
+        </div>
+
+        <p><i class="fa fa-arrow-up" aria-hidden="true"></i>Copy notes from the top<i class="fa fa-arrow-up" aria-hidden="true"></i></p>
+    </div>
+
+    <script>
+        //To make the text copy when the copy button is clicked//
+
+
+        let HTMLBox = document.getElementById("HTMLBox");
+        let HTMLButton = document.getElementById("HTMLButton");
+        HTMLButton.onclick = function() {
+            HTMLBox.select();
+            document.execCommand("copy")
+            HTMLButton.innerText = "Copied!"
+        }
+    </script>
+</body>
+</html>

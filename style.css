@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #fdfcfc;
+}
+
+.text-boxes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+
+.text-boxes .text-box{
+    height: 300px;
+    max-height: 600;
+    width: 100%;
+    margin: 55px 0;
+}
+
+.text-boxes .text-box .topic{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f22626;
+    margin: 4px;
+}
+
+.text-boxes .text-box textarea{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #f22626;
+    z-index: 2;
+    box-shadow: inset 0 0 10px #f22626,
+                0 0 10px #f22626;
+    border-radius: 8px;
+    color: #f22626;
+    background: #fee7e7;
+}
+
+.text-box textarea::-webkit-scrollbar{
+    color: #f22626;
+    width: 1px;
+}
+.text-boxes .text-box button{
+    height: 60px;
+    width: 155px;
+    color: #fff;
+    background: #f22626;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 3;
+    box-shadow: inset 0 0 10px #f22626,
+                0 0 10px #f22626;
+}
+.text-boxes .text-box button:hover{
+    background: #f10e0e;
+    z-index: 3;
+    box-shadow: 0 0 10px #f22626, 
+                0 0 20px #f22626,
+                0 0 30px #f22626;
+    width: 160px;
+    height: 65px;
+}
+@media (max-width: 400px) {
+    .text-boxes .text-box textarea{
+        width: 100%;
+    }
+}
+.text-boxes p{
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #f22626;
+    border-radius: 5px;
+}
